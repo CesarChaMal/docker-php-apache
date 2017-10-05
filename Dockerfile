@@ -10,7 +10,7 @@ sed -i 's#AllowOverride [Nn]one#AllowOverride All#' /etc/apache2/httpd.conf && \
 sed -i 's/Options Indexes/Options /g' /etc/apache2/httpd.conf && \
 sed -i 's/^#ServerName.*/ServerName 127.0.0.1:80/' /etc/apache2/httpd.conf && \
 sed -i 's/^#LoadModule rewrite_module.*/LoadModule rewrite_module modules\/mod_rewrite.so/' /etc/apache2/httpd.conf && \
-sed -i 's#PidFile "/run/.*#PidFile "/var/www/run/httpd.pid"#' /etc/apache2/conf.d/mpm.conf && \
+sed -i 's#PidFile "/run/.*#PidFile "/var/www/httpd.pid"#' /etc/apache2/conf.d/mpm.conf && \
 sed -i 's#/var/www/localhost/htdocs#/var/www/html#' /etc/apache2/httpd.conf && \
 sed -i 's#/var/www/localhost/cgi-bin#/var/www/cgi-bin#' /etc/apache2/httpd.conf
 
