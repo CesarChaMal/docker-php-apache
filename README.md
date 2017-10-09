@@ -16,12 +16,12 @@
 
 # apache with php on ubuntu
 
-    docker pull ilanyu/docker-php-apache:ubuntu
+    docker pull ilanyu/php-apache:ubuntu
 
-    docker run -d --restart=always --link mysql-5.7.19:mysql -p 8081:80 --name www.lanyus.com -v /root/web/www/www.lanyus.com:/var/www/html ilanyu/docker-php-apache:ubuntu
+    docker run -d --restart=always --link mysql-5.7.19:mysql -p 8081:80 --name www.lanyus.com -v /root/web/www/www.lanyus.com:/var/www/html ilanyu/php-apache:ubuntu
 
 # apache with php on alpine
 
-    docker pull ilanyu/docker-php-apache:alpine
+    docker pull ilanyu/php-apache:alpine
 
-    docker run -d --restart=always --link mysql-5.7.19:mysql -p 8081:80 --name www.lanyus.com -v /root/web/www/www.lanyus.com:/var/www/html ilanyu/docker-php-apache:alpine
+    docker run -d --restart=always --link mysql-5.7.19:mysql -p 8081:80 --name www.lanyus.com -v /root/web/www/www.lanyus.com:/var/www/html ilanyu/php-apache:alpine
